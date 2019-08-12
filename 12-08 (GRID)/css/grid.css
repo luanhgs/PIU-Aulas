@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+header,
+footer{
+    background-color: black;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+.main-grid{
+    margin: 2em auto;
+    width: 80em;
+    display: grid;
+    grid-gap: 1em; /* espaçamento entre os elementos (células) */
+    grid-template-columns: 1fr 1fr 1fr; /*fração*/
+    grid-template-rows: 25em 25em; /* define a altura das linhas */
+    grid-template-areas: "r1c1 r1c2 r1c3" "r2c1 r2c1 r1c3"; /*organização do grid*/
+}
+section{
+    background-color: gray;
+}
+/*cria 'variáveis' das células do grid*/
+.main-grid .r1c1{ grid-area: r1c1 }
+.main-grid .r1c2{ grid-area: r1c2 }
+.main-grid .r1c3{ grid-area: r1c3 }
+.main-grid .r2c1{ grid-area: r2c1 }
+
+.main-grid-two{
+    margin: 2em auto;
+    width: 80em;
+    display: grid;
+    grid-gap: 1em; /* espaçamento entre os elementos (células) */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*fração*/
+    grid-template-rows: 25em 25em 25em; /* define a altura das linhas */
+    grid-template-areas: "r1c1 r1c2 r1c3 r1c3" "r2c1 r1c2 r2c3 r2c4" "r3c1 r3c2 r2c3 r3c4"; /*organização do grid*/
+}
+
+.main-grid-two .r1c1{ grid-area: r1c1 }
+.main-grid-two .r1c2{ grid-area: r1c2 }
+.main-grid-two .r1c3{ grid-area: r1c3 }
+.main-grid-two .r2c1{ grid-area: r2c1 }
+.main-grid-two .r2c3{ grid-area: r2c3 }
+.main-grid-two .r2c4{ grid-area: r2c4 }
+.main-grid-two .r3c1{ grid-area: r3c1 }
+.main-grid-two .r3c2{ grid-area: r3c2 }
+.main-grid-two .r3c4{ grid-area: r3c4 }
